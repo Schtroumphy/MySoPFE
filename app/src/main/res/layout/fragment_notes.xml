@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ProgressBar
+            android:id="@+id/progressBarNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/txtView_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marks"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textColor="@color/violet_1"
+            />
+
+        <RelativeLayout
+            android:layout_below="@+id/txtView_notes"
+            android:layout_width="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_students_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_notes_error"
+                android:visibility="visible"
+                android:layout_below="@+id/linLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp">
+
+        <TextView
+            android:id="@+id/txt_error_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/violet_1"
+            android:textSize="10dp"
+            android:visibility="gone"
+            android:text="@string/txt_error_access"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearAnnot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_below="@+id/cardView_notes_error"
+
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/annotations"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/violet_1"
+        />
+
+        <TextView
+            android:id="@+id/my_annotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/annotPersist"
+            android:textSize="16dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="15dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/modifAnnot"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/violet_1"
+                    />
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textLongMessage"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edt_annotation"
+
+                    />
+
+        <Button
+            android:id="@+id/btn_validate_annotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/validate"
+            android:background="@color/blue_light"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+
+            />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearPseudoNt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/linearAnnot">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/pseudoNoteTitle"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="@color/violet_1"
+                />
+
+            <EditText
+                android:id="@+id/edt_pseudoNt"
+                android:layout_width="81dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:inputType="number" />
+
+
+
+        <Button
+            android:id="@+id/btn_validate_pseudoNt"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/blue_light"
+            android:text="@string/validate"
+
+            />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

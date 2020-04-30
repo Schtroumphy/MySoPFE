@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">SoPFE</string>
+    <string name="title_activity_home">Accueil</string>
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="menu_home">Accueil</string>
+    <string name="menu_my_projects">Mes Projets</string>
+    <string name="menu_projects">Tous les Projets</string>
+    <string name="menu_tools">Outils</string>
+    <string name="menu_share">Partager</string>
+    <string name="menu_send">Envoyer</string>
+    <string name="menu_jury">Mes jurys</string>
+    <string name="txt_invalid_credentials">Identifiants incorrects</string>
+    <string name="title_activity_project">Projet</string>
+    <string name="channel_name" translatable="false">ChannelName</string>
+    <string name="channel_description">Channel description</string>
+    <string name="nav_logout_txt">Se déconnecter</string>
+    <string name="noter_eleves">Noter les élèves</string>
+    <string name="title_activity_project_test" translatable="false">ProjectActivityTest</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_description">Description</string>
+    <string name="title_note">Notes</string>
+    <string name="title_poster">Poster</string>
+
+    <!-- Activity_main-->
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="signIn">Se connecter</string>
+    <string name="visiteur">Visiteur ? </string>
+    <string name="erreurCoTitre">Erreur </string>
+    <string name="erreurCoMsg">Vos identifiants sont incorrects </string>
+    <string name="aboutTxt">Application Android réalisée par Thessalène Jean-Louis et Tiffaine Hervy</string>
+
+    <!-- content_project-->
+    <string name="descripProj">Description du projet</string>
+    <string name="descripProjTxt">Le projet</string>
+    <string name="annotations">Mes annotations</string>
+    <string name="reflechissons">Mhh... Réfléchissons !</string>
+    <string name="marks">Notes du projet</string>
+    <string name="poster">Poster du projet</string>
+    <!-- fragment_description-->
+    <string name="mesProjets">Mes projets</string>
+    <string name="mesJurys">Mes jurys - rappel</string>
+
+    <!-- jury_item-->
+    <string name="idJury">Identifiant du jury</string>
+    <string name="nbProjets">Nombre de projets</string>
+    <string name="dateJury">Date du jury</string>
+    <string name="projets">Projets : </string>
+
+    <!-- layout_item_project-->
+    <string name="projectId">Id - ProjectId : </string>
+    <string name="titre">Titre : </string>
+    <string name="surnameforename">NOM Prénom</string>
+    <string name="myMark">Ma note : </string>
+    <string name="average">Moyenne : </string>
+
+    <!-- project_item-->
+    <string name="descripSujet">Description du sujet : </string>
+    <string name="superviseur">Superviseur du sujet : </string>
+    <string name="confidentialite">Confidentialité : </string>
+    <string name="etudiants">Etudiants : </string>
+    <string name="txt_edit_note">Modifier la note</string>
+    <string name="txt_members">Membres du jury</string>
+    <string name="about">A propos</string>
+    <string name="superviseurTitre">Superviseur</string>
+    <string name="txt_back">Retour</string>
+    <string name="txt_confid_project_error">Ce projet est confidentiel et vous n\'êtes pas son superviseur.</string>
+    <string name="membreTitre">Membres du jury</string>
+    <string name="Confidentialite">Confidentialite</string>
+    <string name="Titre">Titre</string>
+    <string name="Superviseur">Superviseur</string>
+    <string name="txt_error_access">Vous n\'avez pas accès à ces informations</string>
+    <string name="txt_no_data">Pas de donnée à afficher pour l\'instant</string>
+    <string name="txt_username">Nom d\'utilisateur</string>
+    <string name="propos">A propos</string>
+    <string name="txt_reconnection">Reconnexion en cours</string>
+    <string name="txt_error_invalid_credentials">Invalid Credentials</string>
+    <string name="txt_error_fail">Echec du chargement.</string>
+    <string name="txt_invalid_mark">Note invalide</string>
+    <string name="txt_error_empty_value">Veuillez entrer une valeur</string>
+    <string name="menu_sources">Sources</string>
+    <string name="annotPersist">Annotations présentes en persistance</string>
+    <string name="modifAnnot">Modifier/Créer une annotation</string>
+    <string name="pseudoNoteTitle">Ma pseudo note</string>
+    <string name="validate">Valider</string>
+    <string name="pseudoMark">Note donnée</string>
+    <string name="txt_sources"> Icones : https://www.flaticon.com/authors/freepik </string>
+    <string name="title_localize">Localiser</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bonjour fragment vide</string>
+    <string name="clickHereToMark">Cliquez ici pour noter ce projet !</string>
+    <string name="NoJuryMembers">Vous êtes le pseudo jury aujourd\'hui!</string>
+    <string name="noSupervisor">Pas de superviseur attitré</string>
+    <string name="txt_error_connexion">Vérifiez votre connexion internet.</string>
+    <string name="txt_annotation_saved">Annotation enregistrée</string>
+    <string name="myGeneratedJury">Mon jury auto-généré</string>
+    <string name="givenMark">Notes données</string>
+    <string name="GivenNote">Annotations données</string>
+    <string name="myprojectsnull">Vous n\'avez pas de projets à vous !</string>
+
+
+</resources>

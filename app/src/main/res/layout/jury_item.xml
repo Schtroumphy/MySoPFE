@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+
+        >  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/cardview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/group_icon" />
+
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/cardview_image"
+            android:paddingBottom="5dp"
+            android:text="@string/idJury"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txt_nb_projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_id"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/cardview_image"
+            android:text="@string/nbProjets"
+            android:textColor="#3A3838" />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_nb_projects"
+            android:layout_toRightOf="@+id/cardview_image"
+            android:text="@string/dateJury"
+            android:textColor="#3A3838" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_below="@+id/txt_date"
+            >
+
+            <TextView
+                android:id="@+id/text_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Membres : "
+                android:layout_marginRight="14dp"
+                android:textColor="#3A3838" />
+
+        <TextView
+            android:id="@+id/txt_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Membres"
+            android:textColor="#3A3838" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_sub_item"
+            android:visibility="gone"
+            android:layout_below="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

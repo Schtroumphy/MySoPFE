@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="fr.eseo.hervy.sopfe.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_jury"
+        android:name="fr.eseo.hervy.sopfe.ui.Jury.MyJuryFragment"
+        android:label="@string/menu_jury"
+        tools:layout="@layout/fragment_jury" />
+
+    <fragment
+        android:id="@+id/nav_all_projects"
+        android:name="fr.eseo.hervy.sopfe.ui.allProjects.AllProjectsFragment"
+        android:label="@string/menu_projects"
+        tools:layout="@layout/fragment_my_projects" />
+
+    <fragment
+        android:id="@+id/nav_my_projects"
+        android:name="fr.eseo.hervy.sopfe.ui.myProjects.MyProjectsFragment"
+        android:label="@string/menu_my_projects"
+        tools:layout="@layout/fragment_my_projects" />
+
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="fr.eseo.hervy.sopfe.ui.tools.ToolsFragment"
+        android:label="@string/menu_sources"
+        tools:layout="@layout/fragment_tools" />
+
+</navigation>

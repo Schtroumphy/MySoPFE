@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollViewPageProject"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProjectActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_project">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_sub_item"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/ic_launcher_foreground"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_toEndOf="@id/img_sub_item"
+                android:padding="12dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Supervisor"/>
+
+                <TextView
+                    android:id="@+id/txt_supervisor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Surname and forename"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/descripProj"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/violet_1"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_display_descrip"
+                android:layout_width="27dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_expand_more_round" />
+
+            <ImageButton
+                android:id="@+id/btn_hide_descrip"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@mipmap/ic_expand_less_round"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_description"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            >
+        <ScrollView
+            android:id="@+id/scrollViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+            <TextView
+                android:id="@+id/txt_description_project"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/descripProjTxt"
+                android:gravity="center"
+                />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/annotations"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/violet_1"
+                />
+            <ImageButton
+                android:id="@+id/btn_display_annotations"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_expand_more_round"/>
+
+            <ImageButton
+                android:id="@+id/btn_hide_annotations"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@mipmap/ic_expand_less_round"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_annotations"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            >
+
+        <ScrollView
+            android:id="@+id/scrollViewAnnotations"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <EditText
+                    android:id="@+id/edit_annotations"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/reflechissons"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/txtView_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/marks"
+                android:textSize="16dp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="@color/violet_1"
+                />
+            <ImageButton
+                android:id="@+id/btn_display_notes"
+                android:layout_width="27dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_expand_more_round" />
+            <ImageButton
+                android:id="@+id/btn_hide_notes"
+                android:layout_width="27dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@mipmap/ic_expand_less_round" />
+        </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_notes"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_students_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_error"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/poster"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/violet_1"
+            />
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:id="@+id/imagePoster"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+</ScrollView>

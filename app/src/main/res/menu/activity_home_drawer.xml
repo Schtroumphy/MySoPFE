@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_jury"
+            android:icon="@drawable/group_icon"
+            android:title="@string/menu_jury" />
+
+
+        <item
+            android:id="@+id/nav_my_projects"
+            android:icon="@drawable/projet"
+            android:title="@string/menu_my_projects" />
+        <item
+            android:id="@+id/nav_all_projects"
+            android:icon="@drawable/cap"
+            android:title="@string/menu_projects" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_grain"
+            android:title="@string/menu_sources" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/nav_logout_txt" />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,71 @@
+README
+
+This project is about a mobile application on Android. 
+The aims of this application are twofold:
+1. Assist the teaching staff in grading the poster presentation’s for final year student’s projects.
+2. Promote the standard of excellence in ESEO’s student’s work, notably during the open days.
+
+It's important to notice that clicking on a button during a loading throws an error on the application. Please, do not click anywhere while the app is still loading. 
+
+1 - Installation
+ Install the last version of Android Studio : 
+ ```bash
+Android Studio 3.5
+Build #AI-191.8026.42.35.5791312, built on August 9, 2019
+JRE: 1.8.0_202-release-1483-b03 amd64
+JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+Windows 10 10.0
+```
+Import the archive file named "HERVY_JEAN-LOUIS_Android2019.zip" into Android Studio and unzip it into a folder.
+
+Open Android Studio and click on "Open an existing Android studio project".
+Choose the root of the unzip project (with the android icon) called "SoPFE".
+
+The project will be automatically build by Android Studio. Then, you can run it by clicking on the green play button on the top (rigth) of the IDE.
+
+### Run the app
+
+#### On a physical device
+In Android Studio, you use an Andorid phone  to run your app. For that, your phone have to be on Developper Mode. 
+In general, you have to click seven times on your build number in parameters but in function of your Android phone this option can be activated differently.
+
+After, activate the USB Debugging.
+
+Connect your phone in USB to your computer. Authorize the debugging mode and run the app by clicking on the green play button.
+
+#### On an emulator
+In Android Studio, you can create an emulator to run your app. For this, you have to create one.
+
+Go to Tools > AVD Manager.
+
+Click on "+ Create virtual device...". Choose the phone category, choose the phone you want (ex : Pixel 2) then on "Next". Choose the system image (ex : Pie for API 8) then on "Next".
+There, you can change the name of your virtual device. Click on "Finish".
+
+After, choose your new virtual device before the play button and click on this green play button.
+
+2- Use of SoPFE 
+	a - As a jury member or a teacher
+	There is some accessible items on the navigationView (the menu) :
+		- My projects : Page where there is a list of all the projects of the connected user. By clicking on a cardview, the user is redirected on the project page.
+		- All projects : Page with a list of all projects with some details as confidentiality or title.
+		- My juries : This page shows a list of the jury/ies of the user (with some details). By clicking on the cardview, he can see the differents projects attributed to this jury. And by clicking on a project, he can be redirected to the project activity.
+		-Project Page 
+		- First tab : The user has the description of the project, the supervisor, the jury members and the confidentiality of the project.
+			--> If he isn't the supervisor of the project, he doesn't have access to the project page.
+		- Second tab : The user can see the individuals notes of the team of the project. (A message appears if he doesn't have access to these information). By clicking on the cardview, he can 					change the note and add a comment. By clicking on the info button he can see the comment (if there is one) already given.
+		- Thir tab : The user can see the poster of the project. By clicking on it, he can zoom on it.
+		- Fourth tab : The user can localise the poster.
+	b - As a JPO 
+		When you are a communication's team member, you can connect on SoPFE by using "jpo". On the first connection, SoPFE will choose 5 projects to insert in a pseudo jury, and it's automatic. When you are connected, on the first page you can see this 5 projects, stored on the phone, by clicking on "My auto-generated jury". Scroll on the section to get all the projects. 
+		After seeing the projects, you can click on given notes and given marks to get the comments and the marks let by visitors. Scroll on the section to get all the comments and notes. 
+		You can access to "All Projects" and see a list of all the projects, and then, by clicking on it, you can see the description, the supervisor, the poster. 
+		On "My Project", you will receive a message because you're not a supervisor of a project, so you don't have your own projects.
+	c - As a visitor 
+		Click on "Visitor?" on the first page. Without connection, you are going to be redirected on an activity which shows the 5 projects 
+		you need to mark as a pseudo jury. By clicking on a project, you can see the description of the project and the poster. You can add comment and marks which are going to be stored on the phone. 
+
+## Contributing
+This project can be modified.
+
+## License
+Creative Commons.
